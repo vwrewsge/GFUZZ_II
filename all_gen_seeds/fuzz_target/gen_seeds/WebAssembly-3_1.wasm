@@ -1,0 +1,19 @@
+
+(module
+  (import "env" "memory" (memory 1))
+  (import "env" "abort" (func (param i32)))
+  (import "env" "print" (func (param i32) (param i32)))
+
+  (func $start
+    (call $print
+      (i32.const 4) ;; Length of the string
+      (i32.const 16) ;; Offset to string data
+    )
+  )
+
+  (data (i32.const 16) "WebAssembly is secure and sandboxed.")
+
+  (memory 1)
+  (export "memory" (memory 0))
+  (export "start" (func $start))
+)

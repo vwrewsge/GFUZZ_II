@@ -1,0 +1,10 @@
+
+(module
+    (import "env" "log" (func $log (param i32)))
+    (func (export "standardization")
+        i32.const 1
+        call $log
+    )
+    (memory 1)
+    (data (i32.const 0) "WebAssembly is a standard developed by the W3C to ensure consistency and interoperability across browsers and platforms.")
+)

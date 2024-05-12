@@ -1,0 +1,7 @@
+Packet Rate: 194
+Throughput: 4.583339100818084 Mbps
+Latency: 0.38122012976888286 ms
+Protocol Distribution:
+- TCP: 296 packets
+- UDP: 190 packets
+- ICMP: 52 packets

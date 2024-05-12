@@ -1,0 +1,8 @@
+
+(module
+  (func $integration
+    (drop)
+  )
+  (memory 1)
+  (export "integration" (func $integration))
+)
